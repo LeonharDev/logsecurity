@@ -1,0 +1,80 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #212529;
+  padding: 10px;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 380px;
+  padding: 10px;
+  padding-top: 25px;
+  padding-right: 35px;
+  padding-left: 35px;
+  margin: auto;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: 7px;
+  border: none;
+  border-radius: unset;
+  border-bottom: 1px solid #0dcaf0;
+  background-color: #292e33;
+  color: white;
+}
+
+.form-signin input[type="password"] {
+  border: none;
+  border-radius: unset;
+  border-bottom: 1px solid #0dcaf0;
+  background-color: #292e33;
+  color: white;
+}
+
+.form-signin input[type="email"]:focus {
+  border-bottom: 2px solid #ffffff;
+  box-shadow: unset;
+}
+
+.form-signin input[type="password"]:focus {
+  border-bottom: 2px solid #ffffff;
+  box-shadow: unset;
+}
+
+.form-floating > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 1.4rem 0.75rem;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  opacity: 0.65;
+  transform: scale(0.85) translateY(-1.2rem) translateX(0.15rem);
+}
+
+.border-ultra {
+  border: 1px solid #0dcaf0;
+}
+
+.bg-gray {
+  background-color: #292e33;
+}
